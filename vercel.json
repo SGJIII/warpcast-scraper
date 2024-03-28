@@ -1,9 +1,11 @@
 {
-    "functions": {
-      "api": {
-        "handler": "server.app",
-        "runtime": "python3.8"
-      }
-    }
-  }
+    "version": 2,
+    "routes": [
+      { "src": "/(.*)", "dest": "/server.py" }
+    ]
+}
+
+
+  
+  
   

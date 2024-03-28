@@ -1,8 +1,6 @@
 from flask import Flask, render_template, request, jsonify, redirect, url_for, Response
 from scraper.scraper import scrape_followers
 import csv
-import sys
-print(sys.path)
 
 
 app = Flask(__name__)
