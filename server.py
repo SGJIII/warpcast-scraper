@@ -15,9 +15,11 @@ def index():
 @app.route('/download_following_csv/<username>', methods=['GET'])
 def download_following_csv(username):
     following = scrape_followers(username)
-    csv_data = [['Username']]
+    csv_data = [['Username', 'Link']]
+
     for user in following:
-        csv_data.append([user])
+        link = f"https://warpcast.com/{user}"
+        csv_data.append([user, link])
     
     # Prepare CSV response
     def generate():
