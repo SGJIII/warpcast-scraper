@@ -53,19 +53,4 @@ Before running the application, ensure you have the following installed on your 
 - Use caution when scraping data from websites and ensure you comply with the website's terms of service and legal requirements.
 
 
-project_root/
-│
-├── scraper/
-│   ├── __init__.py
-│   └── scraper.py
-│
-├── static/
-│   └── styles.css
-│
-├── templates/
-│   ├── index.html
-│   └── followers.html
-│
-├── vercel.json
-├── requirements.txt
-└── server.py
+
